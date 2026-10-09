@@ -40,25 +40,26 @@ export const projects: Project[] = [
     caseStudyUrl: '#',
   },
   {
-    id: 'sakhi',
-    number: '02',
-    title: 'Sakhi (सखी)',
-    description:
-      'A health and safety companion for women combining AI-powered wellness assistance, menstrual cycle tracking, educational resources, community storytelling, and local medical discovery.',
-    tags: ['React', 'TypeScript', 'FastAPI', 'AI/ML'],
-    previewType: 'sakhi',
-    caseStudyUrl: '#',
-  },
-  {
-    id: 'trader-expert',
-    number: '03',
-    title: 'Trader Expert',
-    description:
-      'A stock-market analysis platform combining financial data, analytics and AI-assisted insights.',
-    tags: ['Next.js', 'Python', 'MongoDB', 'AI/ML'],
-    previewType: 'trader-expert',
-    caseStudyUrl: '#',
-  },
+  id: 'sakhi',
+  number: '02',
+  title: 'Sakhi (सखी)',
+  description:
+    'A health and safety companion for women combining AI-powered wellness assistance, menstrual cycle tracking, educational resources, community storytelling, and local medical discovery.',
+  tags: ['React', 'TypeScript', 'FastAPI', 'AI/ML'],
+  previewType: 'sakhi',
+  caseStudyUrl:
+    'https://github.com/Anuj-165/Sakhi---Your-Health-Safety-Companion',
+},
+{
+  id: 'trader-expert',
+  number: '03',
+  title: 'Trader Expert',
+  description:
+    'A stock-market analysis platform combining financial data, analytics and AI-assisted insights.',
+  tags: ['Next.js', 'Python', 'MongoDB', 'AI/ML'],
+  previewType: 'trader-expert',
+  caseStudyUrl: 'https://github.com/Anuj-165/TradeXpert',
+},
 ];
 
 export const projectDetails: Record<string, ProjectDetail> = {
@@ -175,8 +176,8 @@ export const projectDetails: Record<string, ProjectDetail> = {
       'More advanced conversational AI capabilities',
     ],
 
-    github: '#',
-    caseStudy: '#',
+    github: 'https://github.com/Anuj-165/Sakhi---Your-Health-Safety-Companion.git',
+    caseStudy: 'https://github.com/Anuj-165/Sakhi---Your-Health-Safety-Companion.git',
   },
 
   'trader-expert': {
@@ -210,8 +211,8 @@ export const projectDetails: Record<string, ProjectDetail> = {
       'Real-time alerts and notifications',
       'More sophisticated AI prediction models',
     ],
-    github: '#',
-    caseStudy: '#',
+    github: 'https://github.com/Anuj-165/TradeXpert.git',
+    caseStudy: 'https://github.com/Anuj-165/TradeXpert.git',
   },
 };
 

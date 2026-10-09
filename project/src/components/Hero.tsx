@@ -62,8 +62,10 @@ export default function Hero() {
             </a>
 
             {/* Download CV */}
+           
             <a
-              href="KFd#"
+              href="/Anuj%20Purohit.pdf"
+              download="Anuj_Purohit_CV.pdf"
               className="group inline-flex items-center gap-2 text-sm text-[#F5F5F2]/80 hover:text-accent transition-smooth"
             >
               <Download
@@ -72,6 +74,7 @@ export default function Hero() {
               />
               Download CV
             </a>
+
           </div>
         </div>
 

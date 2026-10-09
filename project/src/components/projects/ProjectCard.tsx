@@ -182,32 +182,50 @@ export default function ProjectCard({
 
         {/* Actions */}
         <div className="flex items-center gap-4 mt-2">
+          
           {/* Case Study */}
           <a
             href={project.caseStudyUrl}
+            target={
+              project.caseStudyUrl.startsWith('http')
+                ? '_blank'
+                : undefined
+            }
+            rel={
+              project.caseStudyUrl.startsWith('http')
+                ? 'noopener noreferrer'
+                : undefined
+            }
+            onClick={(e) => {
+              if (
+                !project.caseStudyUrl ||
+                project.caseStudyUrl === '#'
+              ) {
+                e.preventDefault();
+                openArc(
+                  `You're looking at **${project.title}**.\n\nAsk me about its architecture, technologies, purpose or implementation.`
+                );
+              }
+            }}
             className="
-              inline-flex
-              items-center
-              gap-1
-              text-xs
-              text-[#1a1a1a]
-              hover:text-[#43D17A]
-              transition-smooth
-              w-fit
-            "
+    inline-flex items-center gap-1
+    text-xs text-[#1a1a1a]
+    hover:text-[#43D17A]
+    transition-smooth w-fit
+  "
           >
             View Case Study
 
             <ArrowUpRight
               size={12}
               className="
-                transition-transform
-                duration-300
-                group-hover:translate-x-0.5
-                group-hover:-translate-y-0.5
-              "
+      transition-transform duration-300
+      group-hover:translate-x-0.5
+      group-hover:-translate-y-0.5
+    "
             />
           </a>
+
 
           {/* ARC */}
           <button
